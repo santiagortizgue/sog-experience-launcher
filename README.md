@@ -1,4 +1,4 @@
-# 🚀 Instancia Auto-Actualizable (Packwiz + Prism Launcher) — Technical Design
+# 🚀 Auto-Updating Instance (Packwiz + Prism Launcher) — Technical Design
 
 This repository hosts the auto-updating modpack configuration for the **SOG Experience** Minecraft Server, a private personal server running Minecraft version **1.21.1** with the NeoForge mod loader. It leverages the open-source modpack manager **Packwiz** integrated directly into **Prism Launcher** to distribute mods, configuration files, FTB quests, and shared waypoints automatically to players.
 
@@ -6,7 +6,7 @@ This document details the architecture, configuration, and implementation plan f
 
 ---
 
-## ⚙️ Core Architecture & Ecosistema SOG
+## ⚙️ Core Architecture & SOG Ecosystem
 
 The update mechanism runs entirely before Minecraft starts, allowing for seamless synchronization of mods, assets, and configurations.
 
@@ -22,25 +22,25 @@ graph TD
     Client -->|6. JVM Execution| GameLaunch[Minecraft / NeoForge Starts]
 ```
 
-
+---
 
 ## 🛠️ Step-by-Step Setup Guide
 
 Follow this guide to initialize, configure, and publish your auto-updating modpack instance using Packwiz.
 
-### Paso 1: Inicializar el directorio local del Launcher
-1. Abre la terminal de PowerShell en la carpeta `sog-launcher/`.
-2. Inicializa el repositorio Git y Packwiz:
+### Step 1: Initialize the Local Launcher Directory
+1. Open a terminal in the `sog-launcher/` folder.
+2. Initialize the Git repository and Packwiz:
    ```powershell
    cd sog-launcher
    git init
-   # Descarga el ejecutable de packwiz (packwiz.exe) en esta carpeta
+   # Download the packwiz executable (packwiz.exe) to this folder
    .\packwiz.exe init --name "SOG Experience" --author "Sendout" --mc-version 1.21.1 --modloader neoforge --loader-version 21.1.218
    ```
-   Esto creará los archivos base `pack.toml` e `index.toml`.
+   This will create the base `pack.toml` and `index.toml` files.
 
-### Paso 2: Configurar filtros de ignorado y untracked
-Abre el archivo `pack.toml` generado y añade las directivas de exclusión de datos del jugador al final:
+### Step 2: Configure Ignore Filters
+Open the generated `pack.toml` file and append the player data exclusion directives at the end:
 ```toml
 [download]
 ignore = [
@@ -55,53 +55,53 @@ ignore = [
 ]
 ```
 
-### Paso 3: Agregar mods públicos y recursos
-* **Añadir mods de Modrinth/CurseForge**:
-  ```powershell
-  # Ejemplo: Añadir Cobblemon y FTB Quests directamente desde Modrinth
-  .\packwiz.exe mr add cobblemon
-  .\packwiz.exe mr add ftb-quests
-  .\packwiz.exe mr add xaeros-minimap
-  ```
-  *(Packwiz creará archivos `.toml` pequeños bajo `mods/` que apuntan al CDN, manteniendo el repositorio muy ligero).*
+### Step 3: Add Public Mods and Resources
+* **Add mods from Modrinth/CurseForge**:
+   ```powershell
+   # Example: Adding Cobblemon and FTB Quests directly from Modrinth
+   .\packwiz.exe mr add cobblemon
+   .\packwiz.exe mr add ftb-quests
+   .\packwiz.exe mr add xaeros-minimap
+   ```
+   *(Packwiz will create small `.toml` files under `mods/` pointing to the CDN, keeping the repository lightweight).*
 
-### Paso 4: Añadir tu Mod Privado (SOG Additions)
-1. Crea la carpeta `custom/` dentro de `sog-launcher/`.
-2. Copia el JAR compilado de tu mod `cobbleadditions-0.9.1.jar` dentro de `custom/`.
-3. Agrégalo a la indexación de Packwiz indicando que es un archivo local:
+### Step 4: Add Your Private Mod (SOG Additions)
+1. Create a `custom/` folder inside `sog-launcher/`.
+2. Copy the compiled JAR of your mod `cobbleadditions-0.9.1.jar` into `custom/`.
+3. Add it to the Packwiz index indicating it is a local file:
    ```powershell
    .\packwiz.exe file add custom/cobbleadditions-0.9.1.jar
    ```
 
-### Paso 5: Sincronizar Misiones (SOG Experience) y Waypoints
-1. Copia tu carpeta de misiones procesadas y limpias a la carpeta `config/` del launcher:
+### Step 5: Synchronize Quests (SOG Experience) and Waypoints
+1. Copy your processed quest folder into the launcher's `config/` directory:
    `sog-launcher/config/ftbquests/quests/`
-2. Registra la carpeta entera en Packwiz para que se actualice a los jugadores:
+2. Register the entire folder in Packwiz so it updates for the players:
    ```powershell
    .\packwiz.exe refresh
    ```
-3. Genera tus waypoints compartidos en tu cliente, copia el archivo `normal.txt` a la ruta `sog-launcher/xaerowaypoints/Multiplayer_tu-ip/dim%0/normal.txt` y ejecuta `.\packwiz.exe refresh`.
+3. Generate your shared waypoints in your client, copy the `normal.txt` file to the path `sog-launcher/xaerowaypoints/Multiplayer_your-ip/dim%0/normal.txt` and execute `.\packwiz.exe refresh`.
 
-### Paso 6: Publicar el Repositorio
-Crea un repositorio público o privado en GitHub (ej. `TuUsuario/sog-modpack`) y sube todos los archivos de `sog-launcher/`:
+### Step 6: Publish the Repository
+Create a public repository on GitHub (e.g. `santiagortizgue/sog-experience-launcher`) and push all the files of `sog-launcher/`:
 ```powershell
-git remote add origin https://github.com/TuUsuario/sog-modpack.git
+git remote add origin https://github.com/santiagortizgue/sog-experience-launcher.git
 git branch -M main
 git add .
 git commit -m "Initial modpack push"
 git push -u origin main
 ```
 
-### Paso 7: Configurar Prism Launcher en los Clientes
-1. Descarga el cargador liviano de Packwiz [packwiz-installer-bootstrap.jar](https://github.com/packwiz/packwiz-installer-bootstrap/releases) y colócalo dentro de la carpeta raíz de la instancia de Prism de tus jugadores.
-2. Abre las opciones de la instancia de Prism Launcher de tus jugadores, ve a la sección **Custom Commands** (Comandos Personalizados) y activa el comando **Pre-launch command**:
+### Step 7: Configure Prism Launcher on Client Machines
+1. Download the lightweight Packwiz bootstrap loader [packwiz-installer-bootstrap.jar](https://github.com/packwiz/packwiz-installer-bootstrap/releases) and place it inside the root directory of your players' Prism instances.
+2. Open the instance settings in Prism Launcher, navigate to the **Custom Commands** section, and enable the **Pre-launch command**:
    ```bash
-   "$INST_JAVA" -jar packwiz-installer-bootstrap.jar -bootstrap https://raw.githubusercontent.com/TuUsuario/sog-modpack/main/pack.toml
+   "$INST_JAVA" -jar packwiz-installer-bootstrap.jar -bootstrap https://raw.githubusercontent.com/santiagortizgue/sog-experience-launcher/main/pack.toml
    ```
-3. ¡Listo! Cada vez que los jugadores inicien la instancia, Packwiz actualizará el mod SOG, las misiones y los waypoints oficiales antes de abrir el juego.
+3. All set! Every time players launch the instance, Packwiz will update the SOG mod, quests, and official waypoints before the game starts.
 
 ---
 
-## 📋 Plan de Desarrollo
+## 📋 Development Plan
 
-El cronograma de fases, objetivos de despliegue y roadmap técnico se detallan en el documento [development_plan.md](./development_plan.md).
+The phased roadmap, deployment objectives, and technical details are documented in [development_plan.md](./development_plan.md).

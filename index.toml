@@ -2,19 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "README.md"
-hash = "dcb1b665a4e610b4c35ca671d34bff33be2a4116476fad9d1e861201f9245b12"
-
-[[files]]
-file = "context/development_plan.md"
-hash = "7c03a9348ce542883879e1e2ecdb29390b4418e85eeb6de107ece2f5a54ae938"
-
-[[files]]
-file = "context/export_and_setup_guide.md"
-hash = "7fa2fa7d270673d17010ffa3b6f654748b1bb6a3c16a1bad9faeca0b3e9aae5c"
-
-[[files]]
-file = "context/mod_list_from_prism.md"
-hash = "628bd448d455b56f0e5f5ad395872b46f2bbf78c1578bb0b98b32537edb5eb07"
+hash = "c929d1e204f7afa299c2b0b66051c28a3fef4b434b48063cc1e2942b1bc2afe5"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"

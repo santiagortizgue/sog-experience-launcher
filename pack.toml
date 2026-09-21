@@ -6,20 +6,8 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "5dcf1ad3df4d4b7a6442adc5b129c2aeb3554e1cb423913fe32ea86ded0d7796"
+hash = "812222cb6d70caca76658a4db43cc33823d24cce58d9198146dab2178eb8f8f7"
 
 [versions]
 minecraft = "1.21.1"
 neoforge = "21.1.218"
-
-[download]
-ignore = [
-    "options.txt",
-    "optionsof.txt",
-    "saves/**",
-    "logs/**",
-    "screenshots/**",
-    "shaderpacks/**",
-    "xaerowaypoints/**",
-    "journeyMap/waypoints/**"
-]

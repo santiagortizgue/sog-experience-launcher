@@ -3,3 +3,4 @@ packwiz
 .DS_Store
 *.tmp
 *.log
+context/

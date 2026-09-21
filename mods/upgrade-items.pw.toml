@@ -1,0 +1,13 @@
+name = "Upgrader items"
+filename = "upgrader-neoforge-1.2.1+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/UQgc9Wcb/versions/n86zXbJ7/upgrader-neoforge-1.2.1%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "dc7ac71bed9d29425c614ce8b8bc28ebf964c0852eb24893a24aa4147b94a2c999c08bdab5dc673176672b7fd280de243982ba7a9f5e0124c328a4b94f78d6d7"
+
+[update]
+[update.modrinth]
+mod-id = "UQgc9Wcb"
+version = "n86zXbJ7"

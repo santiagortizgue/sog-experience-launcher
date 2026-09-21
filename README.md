@@ -9,7 +9,7 @@ Permite que tú y tus amigos tengan siempre sincronizada la lista exacta de mods
 ## 🛠️ Especificaciones Técnicas
 
 - **Versión de Minecraft**: `1.21.1`
-- **Mod Loader**: `NeoForge` (Versión `21.1.218`)
+- **Mod Loader**: `NeoForge` (Versión `21.1.250`)
 - **Gestor de Sincronización**: `Packwiz` (`pack.toml` e `index.toml`)
 - **Cliente Recomendado**: `Prism Launcher` (mediante `packwiz-installer-bootstrap.jar`)
 - **Total de Mods**: 83 mods (82 públicos + 1 mod propio interno)

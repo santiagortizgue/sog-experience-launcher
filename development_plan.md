@@ -21,7 +21,7 @@ Follow this guide to initialize, configure, and publish your auto-updating modpa
    cd sog-launcher
    git init
    # Download the packwiz executable (packwiz.exe) to this folder
-   .\packwiz.exe init --name "SOG Experience" --author "Sendout" --mc-version 1.21.1 --modloader neoforge --loader-version 21.1.218
+   .\packwiz.exe init --name "SOG Experience" --author "Sendout" --mc-version 1.21.1 --modloader neoforge --loader-version 21.1.250
    ```
    This will create the base `pack.toml` and `index.toml` files.
 

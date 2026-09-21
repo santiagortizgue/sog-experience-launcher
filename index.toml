@@ -31,11 +31,6 @@ hash = "7dba9a4a9894a6bbab3a8c7edcc718499297412247fc0e8ccebf75b760c85140"
 metafile = true
 
 [[files]]
-file = "mods/better-advanced-tooltips.pw.toml"
-hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
-metafile = true
-
-[[files]]
 file = "mods/better-third-person.pw.toml"
 hash = "e1f1588b18947699ddc9b4f7c5b5406c5559155b8cb52dcd0f203c07c31cd0b8"
 metafile = true
@@ -331,7 +326,7 @@ metafile = true
 
 [[files]]
 file = "mods/rhino.pw.toml"
-hash = "e55ca32b338a0e0540f4fec5170675d860566255ae0f45692a00cb4ebf2eb535"
+hash = "673de9cae75d2ad02796368939384de0d7238cf5c782975d71848a2187f753e7"
 metafile = true
 
 [[files]]
@@ -376,7 +371,7 @@ metafile = true
 
 [[files]]
 file = "mods/terralith.pw.toml"
-hash = "da7ee99189ad35aac094919fe33cac647d98533b23c228f10d4811f08989e2b8"
+hash = "81c5c05f9ed4c07b9f027ff6c421939bb04e476075091f135d34aaa05af1f950"
 metafile = true
 
 [[files]]

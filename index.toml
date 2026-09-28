@@ -72,7 +72,7 @@ metafile = true
 
 [[files]]
 file = "mods/cobbleadditions.jar"
-hash = "787bc3f8476c15d0e11b15083de04dfb8034d34a700601b7b22a599ac4da9af0"
+hash = "e7023c5f4c37ba541e1200829320ca75a2ccac55188fb4a6f2800471cbec0598"
 
 [[files]]
 file = "mods/cobblefurnies.pw.toml"
@@ -90,6 +90,11 @@ hash = "1b474234c41d45bcaaef752a71291e73301530abf2a31cc17a986a0ae5dffa22"
 metafile = true
 
 [[files]]
+file = "mods/cobblemon-pokenav.pw.toml"
+hash = "30c64afe323a053cfb5b40afae3a78eab6f5b602abee66c5f4b750fbeade9654"
+metafile = true
+
+[[files]]
 file = "mods/cobblemon.pw.toml"
 hash = "f480fa46d7f4800dad4414d136541f8f8410d5907fc014e389b648d20b1065ce"
 metafile = true
@@ -102,6 +107,11 @@ metafile = true
 [[files]]
 file = "mods/comforts.pw.toml"
 hash = "36f2f6e74b7dbeccb504572d47006582207544fa234a095093b97adfc7ecd5ac"
+metafile = true
+
+[[files]]
+file = "mods/corpse.pw.toml"
+hash = "8e671fbd3a5460a61073cced391ec08efc6b67d765e49015eea45a1f1db159a0"
 metafile = true
 
 [[files]]

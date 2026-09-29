@@ -72,7 +72,7 @@ metafile = true
 
 [[files]]
 file = "mods/cobbleadditions.jar"
-hash = "cb6f50452492a476ae486264b5cc73f1c13736251b07ea41bb7b0570515d8e8f"
+hash = "1c52bfd485163a751a33c8192ac333e3bcdb9c0eb44ef2aba324da0217cd9853"
 
 [[files]]
 file = "mods/cobblefurnies.pw.toml"

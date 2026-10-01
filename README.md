@@ -14,3 +14,4 @@ For workspace developers and server maintainers, detailed roadmaps, setup guides
 - `context/development_plan.md` — Phased roadmap, technical workflow, and architecture milestones.
 - `context/export_and_setup_guide.md` — Admin instance export procedure and client synchronization guide.
 - `context/mod_list_from_prism.md` — Source mod list reference and upstream repository URLs.
+- `context/sync_and_deploy_mod_guide.md` — Step-by-step synchronization, validation, and deployment protocol for the local mod `cobbleadditions.jar`.

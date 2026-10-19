@@ -428,3 +428,8 @@ metafile = true
 file = "mods/zfastnoise.pw.toml"
 hash = "b24c213b8727e80ca559670e97971c735c4dc4be1d1a4bd637c41450e7654c1e"
 metafile = true
+
+[[files]]
+file = "resourcepacks/e19_cobblemon_minimap_icons.pw.toml"
+hash = "49c3b20b4e25fcecef1a2bac55e9f0060672b2692aef394a6fac65875099d697"
+metafile = true

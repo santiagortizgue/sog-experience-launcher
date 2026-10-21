@@ -390,11 +390,6 @@ hash = "01cab903b1a7f77aa4f28c7fab24e7fa09b376b18c77b487b7ba34e0afc57813"
 metafile = true
 
 [[files]]
-file = "mods/upgrade-items.pw.toml"
-hash = "110a702890e9a23a3247cc962fd387aee9e792368666b8d7b0ab42ddf582a73e"
-metafile = true
-
-[[files]]
 file = "mods/visual-workbench.pw.toml"
 hash = "2684f71394862cff4c20d0f4d8491c0f86f12e66879381295e9088e0eded025d"
 metafile = true

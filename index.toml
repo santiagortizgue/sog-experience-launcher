@@ -77,7 +77,7 @@ metafile = true
 
 [[files]]
 file = "mods/cobbleadditions.jar"
-hash = "070716fc5b4521dbe08310a0b295fa60e4fe8b5d080e4412622fb33139a16a05"
+hash = "26119d72e0f24684718a22e376d77782a437d5c61d5c8bb00f5fb85dceeebe99"
 
 [[files]]
 file = "mods/cobblefurnies.pw.toml"
@@ -122,11 +122,6 @@ metafile = true
 [[files]]
 file = "mods/crafting-tweaks.pw.toml"
 hash = "b63999aa63a273098f42e22d8d5018c8617b8e2babdffc752d9aad3eefaaa76d"
-metafile = true
-
-[[files]]
-file = "mods/create.pw.toml"
-hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
 metafile = true
 
 [[files]]
